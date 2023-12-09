@@ -2,15 +2,9 @@ import Navbar from "@/components/Navbar";
 import Providers from "@/components/Providers";
 import { cn, constructMetadata } from "@/lib/utils";
 import type { Metadata } from "next";
-import { Poppins } from "next/font/google";
 import { Toaster } from "sonner";
-import "./globals.css";
 import Footer from "@/components/Footer";
-
-const poppins = Poppins({
-  weight: ["400", "500", "600", "800", "900"],
-  subsets: ["latin"],
-});
+import "./globals.css";
 
 export const metadata = constructMetadata();
 
@@ -21,12 +15,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className="h-full">
-      <body
-        className={cn(
-          "relative h-full font-sans antialiased",
-          poppins.className
-        )}
-      >
+      <body className={cn("relative h-full font-sans antialiased")}>
         <main className="relative flex flex-col min-h-screen">
           <Providers>
             <Navbar />
