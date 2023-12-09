@@ -17,7 +17,7 @@ export default buildConfig({
   serverURL: process.env.NEXT_PUBLIC_SERVER_URL || "",
   collections: [Users, Products, Media, Orders],
   routes: {
-    admin: "/sell",
+    admin: "/admin",
   },
   admin: {
     user: "users",
@@ -31,7 +31,7 @@ export default buildConfig({
   },
   editor: slateEditor({}),
   db: mongooseAdapter({
-    url: process.env.MONGODB_URL!,
+    url: process.env.MONGODB_URI!,
   }),
   typescript: {
     outputFile: path.resolve(__dirname, "payload-types.ts"),
