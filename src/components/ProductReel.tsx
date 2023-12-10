@@ -65,10 +65,10 @@ const ProductReel = (props: ProductReelProps) => {
               />
             ))}
             {map.length === 0 && (
-              <div className="w-full h-full flex items-center justify-start text-muted-foreground">
+              <h3 className="flex items-center justify-start text-left w-max text-muted-foreground">
                 <Frown className="w-4 h-4 mr-2" />
                 Oops! No Trip Found
-              </div>
+              </h3>
             )}
           </div>
         </div>
