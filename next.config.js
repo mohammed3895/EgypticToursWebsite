@@ -1,5 +1,8 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  basePath: "/egyptictours",
+  output: "export",
+  reactStrictMode: true,
   typescript: {
     ignoreBuildErrors: true,
   },
