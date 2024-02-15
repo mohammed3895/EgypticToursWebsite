@@ -1,4 +1,4 @@
-// File: C:\Users\Mamma\OneDrive\Documents\GitHub\EgypticToursWebsite\src\app\layout.tsx
+// File: E:\WEB DEVELOPMENT\WEB DEVELOPMENT\EgypticToursWebsite\src\app\layout.tsx
 import * as entry from '../../../src/app/layout.js'
 import type { ResolvingMetadata, ResolvingViewport } from 'next/dist/lib/metadata/types/metadata-interface.js'
 
